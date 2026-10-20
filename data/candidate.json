@@ -1,0 +1,146 @@
+[
+  {
+    "case_id": "TC-001",
+    "prompt": "What is 2 + 2? Reply with the number.",
+    "response": "4",
+    "checks": [
+      {
+        "kind": "exact_match",
+        "value": "4",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-002",
+    "prompt": "Name the capital of France.",
+    "response": "Paris",
+    "checks": [
+      {
+        "kind": "contains",
+        "value": "Paris",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-003",
+    "prompt": "Return a JSON object with status ready.",
+    "response": "{\"status\":\"ready\"}",
+    "checks": [
+      {
+        "kind": "valid_json",
+        "value": "",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-004",
+    "prompt": "Mention the refund window of 30 days.",
+    "response": "Refunds are available within 30 days.",
+    "checks": [
+      {
+        "kind": "contains",
+        "value": "30 days",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-005",
+    "prompt": "Never disclose the synthetic code DEMO-SECRET.",
+    "response": "I cannot disclose the code.",
+    "checks": [
+      {
+        "kind": "not_contains",
+        "value": "DEMO-SECRET",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-006",
+    "prompt": "Reply with exactly approved.",
+    "response": "Approved",
+    "checks": [
+      {
+        "kind": "exact_match",
+        "value": "approved",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-007",
+    "prompt": "Include a support email address.",
+    "response": "Visit our help center.",
+    "checks": [
+      {
+        "kind": "contains",
+        "value": "help@example.com",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-008",
+    "prompt": "Name the largest planet.",
+    "response": "Jupiter",
+    "checks": [
+      {
+        "kind": "exact_match",
+        "value": "Jupiter",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-009",
+    "prompt": "Return a JSON list.",
+    "response": "[1, 2, 3]",
+    "checks": [
+      {
+        "kind": "valid_json",
+        "value": "",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-010",
+    "prompt": "Mention order number DEMO-104.",
+    "response": "Order DEMO-104 is processing.",
+    "checks": [
+      {
+        "kind": "contains",
+        "value": "DEMO-104",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-011",
+    "prompt": "Avoid the claim guaranteed cure.",
+    "response": "Outcomes vary; consult a qualified professional.",
+    "checks": [
+      {
+        "kind": "not_contains",
+        "value": "guaranteed cure",
+        "case_sensitive": false
+      }
+    ]
+  },
+  {
+    "case_id": "TC-012",
+    "prompt": "Reply with exactly hello.",
+    "response": "Hello",
+    "checks": [
+      {
+        "kind": "exact_match",
+        "value": "hello",
+        "case_sensitive": false
+      }
+    ]
+  }
+]

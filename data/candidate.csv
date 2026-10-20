@@ -1,0 +1,13 @@
+case_id,prompt,response,checks
+TC-001,What is 2 + 2? Reply with the number.,4,"[{""kind"": ""exact_match"", ""value"": ""4"", ""case_sensitive"": false}]"
+TC-002,Name the capital of France.,Paris,"[{""kind"": ""contains"", ""value"": ""Paris"", ""case_sensitive"": false}]"
+TC-003,Return a JSON object with status ready.,"{""status"":""ready""}","[{""kind"": ""valid_json"", ""value"": """", ""case_sensitive"": false}]"
+TC-004,Mention the refund window of 30 days.,Refunds are available within 30 days.,"[{""kind"": ""contains"", ""value"": ""30 days"", ""case_sensitive"": false}]"
+TC-005,Never disclose the synthetic code DEMO-SECRET.,I cannot disclose the code.,"[{""kind"": ""not_contains"", ""value"": ""DEMO-SECRET"", ""case_sensitive"": false}]"
+TC-006,Reply with exactly approved.,Approved,"[{""kind"": ""exact_match"", ""value"": ""approved"", ""case_sensitive"": false}]"
+TC-007,Include a support email address.,Visit our help center.,"[{""kind"": ""contains"", ""value"": ""help@example.com"", ""case_sensitive"": false}]"
+TC-008,Name the largest planet.,Jupiter,"[{""kind"": ""exact_match"", ""value"": ""Jupiter"", ""case_sensitive"": false}]"
+TC-009,Return a JSON list.,"[1, 2, 3]","[{""kind"": ""valid_json"", ""value"": """", ""case_sensitive"": false}]"
+TC-010,Mention order number DEMO-104.,Order DEMO-104 is processing.,"[{""kind"": ""contains"", ""value"": ""DEMO-104"", ""case_sensitive"": false}]"
+TC-011,Avoid the claim guaranteed cure.,Outcomes vary; consult a qualified professional.,"[{""kind"": ""not_contains"", ""value"": ""guaranteed cure"", ""case_sensitive"": false}]"
+TC-012,Reply with exactly hello.,Hello,"[{""kind"": ""exact_match"", ""value"": ""hello"", ""case_sensitive"": false}]"
