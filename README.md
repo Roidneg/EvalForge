@@ -1,5 +1,3 @@
-![EvalForge run comparison showing improvements and a regression](docs/evalforge-comparison.png)
-
 # EvalForge
 
 **Know how your AI actually performs.**
